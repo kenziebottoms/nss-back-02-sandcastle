@@ -3,17 +3,20 @@
     {
       "first_name": "Zac",
       "last_name": "Effron",
-      "rating": 2
+      "rating": 2,
+      "beach_id": 1
     },
     {
       "first_name": "Dwayne",
       "last_name": "Johnson",
-      "rating": 9
+      "rating": 9,
+      "beach_id": 2
     },
     {
       "first_name": "Blake",
       "last_name": "Lively",
-      "rating": 7
+      "rating": 7,
+      "beach_id": 1
     }
   ]
 }

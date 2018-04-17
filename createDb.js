@@ -9,15 +9,25 @@ const { lifeguards } = require('./seeders/data/lifeguards');
 const { beaches } = require('./seeders/data/beaches');
 const { castles } = require('./seeders/data/castles');
 
-module.exports = (qi) => {
-  models.sequelize.sync({ force: true })
+const createDb = qi => {
+  return models.sequelize.sync({ force: true })
     .then(qi => {
-      return Promise.all([
-        models.Beach.bulkCreate(beaches),
-        models.Lifeguard.bulkCreate(lifeguards),
-        models.Castle.bulkCreate(castles)
-      ]);
+      console.log("sunc");
+      return models.Beach.bulkCreate(beaches);
     })
-    .then(qi => process.exit())
+    .then(qi => {
+      console.log("beaches created");
+      return models.Lifeguard.bulkCreate(lifeguards);
+    })
+    // .then(qi => {
+    //   console.log("lifeguards created");
+    //   return models.Castle.bulkCreated(castles);
+    // })
+    .then(response => {
+      console.log("castles created");
+      process.exit();
+    })
     .catch(err => console.log(err));
 };
+
+createDb();

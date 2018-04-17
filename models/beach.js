@@ -6,13 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     sand_rating: DataTypes.INTEGER
   }, {
     timestamps: false,
-    tableName: "beaches"
+    tableName: 'beaches'
   });
   Beach.associate = function(models) {
     Beach.hasMany(models.Lifeguard, {
-      foreignKey: 'beach_id'
-    });
-    Beach.hasMany(models.Castle, {
       foreignKey: 'beach_id'
     });
   };
