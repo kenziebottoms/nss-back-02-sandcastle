@@ -12,22 +12,17 @@ const { castles } = require('./seeders/data/castles');
 const createDb = qi => {
   return models.sequelize.sync({ force: true })
     .then(qi => {
-      console.log("sunc");
       return models.Beach.bulkCreate(beaches);
     })
     .then(qi => {
-      console.log("beaches created");
       return models.Lifeguard.bulkCreate(lifeguards);
     })
-    // .then(qi => {
-    //   console.log("lifeguards created");
-    //   return models.Castle.bulkCreated(castles);
-    // })
+    .then(qi => {
+      return models.Castle.bulkCreate(castles);
+    })
     .then(response => {
-      console.log("castles created");
       process.exit();
     })
-    .catch(err => console.log(err));
 };
 
 createDb();
