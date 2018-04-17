@@ -9,6 +9,11 @@
       "name": "Manly Beach",
       "location": "Sydney",
       "sand_rating": 5
+    },
+    {
+      "name": "Avalon Beach",
+      "location": "Sydney",
+      "sand_rating": 3
     }
   ]
 }
