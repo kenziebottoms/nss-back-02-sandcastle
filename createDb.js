@@ -7,6 +7,7 @@ const models = require('./models');
 
 const { lifeguards } = require('./seeders/data/lifeguards');
 const { beaches } = require('./seeders/data/beaches');
+const { castles } = require('./seeders/data/castles');
 
 module.exports = (qi) => {
   console.log(lifeguards);
@@ -16,6 +17,9 @@ module.exports = (qi) => {
     })
     .then(qi => {
       return models.Lifeguard.bulkCreate(lifeguards);
+    })
+    .then(qi => {
+      return models.Castle.bulkCreate(castles);
     })
     .then(qi => {
       process.exit();

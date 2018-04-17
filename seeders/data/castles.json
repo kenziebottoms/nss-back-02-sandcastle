@@ -1,0 +1,16 @@
+{
+  "castles": [
+    {
+      "name": "Cair Paravel",
+      "description": "magnificent",
+      "beach_id": 2,
+      "tool_id": 3
+    },
+    {
+      "name": "The Black Gate",
+      "description": "scary",
+      "beach_id": 1,
+      "tool_id": 2
+    }
+  ]
+}

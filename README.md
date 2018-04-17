@@ -3,6 +3,8 @@
 ![](https://img.shields.io/badge/modularity-nodejs+express-green.svg)
 ![](https://img.shields.io/badge/data-json-lightgrey.svg)
 ![](https://img.shields.io/badge/db-postgresql+sequelize-blue.svg)
+![](https://img.shields.io/badge/mvp-working-green.svg)
+![](https://img.shields.io/badge/bonus-wip-red.svg)
 
 ## Run locally
 
@@ -15,18 +17,18 @@ npm start
 
 ## Requirements
 
-- [ ] Create the following models:
+- [x] Create the following models:
     - [x] Beach
     - [x] Lifeguard
-    - [ ] Castle
-        - [ ] `id`
-        - [ ] `description`
-        - [ ] `tool_id`
-        - [ ] `beach_id`
-- [ ] Create JSON for and seed the following tables:
+    - [x] Castle
+        - [x] `id`
+        - [x] `description`
+        - [x] `tool_id`
+        - [x] `beach_id`
+- [x] Create JSON for and seed the following tables:
     - [x] beaches
     - [x] lifeguards
-    - [ ] castles
+    - [x] castles
 
 ### Bonus
 - [ ] Create a simple Express app with the following routes:
