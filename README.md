@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/data-json-lightgrey.svg)
 ![](https://img.shields.io/badge/db-postgresql+sequelize-blue.svg)
 ![](https://img.shields.io/badge/mvp-working-green.svg)
-![](https://img.shields.io/badge/bonus-wip-red.svg)
+![](https://img.shields.io/badge/bonus-working-green.svg)
 
 ## Run locally
 
@@ -31,8 +31,8 @@ npm start
     - [x] castles
 
 ### Bonus
-- [ ] Create a simple Express app with the following routes:
+- [x] Create a simple Express app with the following routes:
     - [x] `/beaches`
-    - [ ] `/beaches/:id/lifeguards`
-    - [ ] `/lifeguards`
-    - [ ] `/castles`
+    - [x] `/beaches/:id/lifeguards`
+    - [x] `/lifeguards`
+    - [x] `/castles`

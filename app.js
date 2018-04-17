@@ -30,4 +30,20 @@ app.use('/beaches', (req, res, next) => {
     .catch(err => next(err));
 });
 
+app.use('/lifeguards', (req, res, next) => {
+  Lifeguard.findAll()
+    .then(lifeguards => {
+      res.status(200).json(lifeguards);
+    })
+    .catch(err => next(err));
+});
+
+app.use('/castles', (req, res, next) => {
+  Castle.findAll()
+    .then(castles => {
+      res.status(200).json(castles);
+    })
+    .catch(err => next(err));
+});
+
 app.listen("8082");
