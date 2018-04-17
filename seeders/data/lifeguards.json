@@ -1,0 +1,14 @@
+{
+  "lifeguards": [
+    {
+      "first_name": "Zac",
+      "last_name": "Effron",
+      "rating": 2
+    },
+    {
+      "first_name": "Dwayne",
+      "last_name": "Johnson",
+      "rating": 9
+    }
+  ]
+}

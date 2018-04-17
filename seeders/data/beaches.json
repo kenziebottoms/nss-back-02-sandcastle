@@ -1,0 +1,14 @@
+{
+  "beaches": [
+    {
+      "name": "Bondi Beach",
+      "location": "Sydney",
+      "sand_rating": 7
+    },
+    {
+      "name": "Manly Beach",
+      "location": "Sydney",
+      "sand_rating": 5
+    }
+  ]
+}
