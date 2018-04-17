@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.16.3",
     "pg": "^7.4.1",
     "sequelize": "^4.37.6"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "db:reset": "node createDb.js"
   },
   "repository": {
     "type": "git",

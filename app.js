@@ -1,9 +1,15 @@
 "use strict";
 
-let sequelize = require('sequelize');
-let createDb = require('./createDb');
+const express = require('express');
+const app = express();
 
-createDb()
-  .then((response) => {
-    process.exit();
-  });
+const { Castle, Beach, Lifeguard } = require('./models');
+
+app.use('/beaches', (req, res, next) => {
+  Beach.findAll()
+    .then(beaches => {
+      res.status(200).json(beaches);
+    })
+});
+
+app.listen("8082");

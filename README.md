@@ -32,7 +32,7 @@ npm start
 
 ### Bonus
 - [ ] Create a simple Express app with the following routes:
-    - [ ] `/beaches`
+    - [x] `/beaches`
     - [ ] `/beaches/:id/lifeguards`
     - [ ] `/lifeguards`
     - [ ] `/castles`
